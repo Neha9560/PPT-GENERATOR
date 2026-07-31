@@ -35,7 +35,7 @@ elif all(ALL_API):
   MODEL = ChatGoogleGenerativeAI(
     google_api_key = GOOGLE_API_KEY,
     model = st.sidebar.selectbox("Gemini-Model-Name",
-                                 option = ["gemini-2.5-flash",
+                                 options = ["gemini-2.5-flash",
                                            "gemini-2.5-flash-lite",
                                            "gemini-3.5-flash",
                                            "gemini-2.5-flash-lite"])
