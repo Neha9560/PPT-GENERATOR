@@ -36,11 +36,12 @@ elif all(all_api):
     google_api_key = GOOGLE_API_KEY,
     model = st.sidebar.selectbox("Gemini-Model-Name",
                                  option = ["gemini-2.5-flash",
-                                           "gemini-2.5-flas-lite",
+                                           "gemini-2.5-flash-lite",
                                            "gemini-3.5-flash",
                                            "gemini-2.5-flash-lite"])
   )
-    else
+else:
+  st.sidebar.info("CHECK-API-KEYS")
 
 # ========setp 5 backend code=============
 def Search_latest_info(query):
