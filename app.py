@@ -153,7 +153,7 @@ if (user_input) and (leader_agent):
         try:
           img = generate_image(user_input)
           st.image(img)
-          except:
+        except:
               url = f"https://image.pollinations.ai/{user_input}"
               time.sleep(4)
               st.image(url)
