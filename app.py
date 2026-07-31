@@ -184,7 +184,7 @@ if (user_input) and (leader_agent):
             with open("ppt.html", 'w') as f:
                f.write(code)
 
-             st.download_button(label = "DOWNLOAD PPT",
+            st.download_button(label = "DOWNLOAD PPT",
                             data = code,
                             file_name = 'ppt.html',
                             mime = 'text/html')
