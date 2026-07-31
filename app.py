@@ -137,8 +137,8 @@ if all (ALL_API):
   leader_agent = create_agent(
     model = model,
     tools =[ Search_latest_info,
-             generate_image
-           ])
+            # generate_image
+              ])
 else:
   st.error("must pass api key")
 
