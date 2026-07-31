@@ -24,7 +24,7 @@ GOOGLE_API_KEY = st.sidebar.text_input("Google-API", type = "password")
 TAVILY_API_KEY = st.sidebar.text_input("TAVILY-API", type = "password")
 
 #==============API VALIDATIONS ==============
-ALL_API =[GOOGLE_API_KEY, TAVILY_API_KEYS]
+ALL_API =[GOOGLE_API_KEY, TAVILY_API_KEY]
 
 if not all(ALL_API):
   st.sidebar.error("Must PASS APP API-KEYS")
